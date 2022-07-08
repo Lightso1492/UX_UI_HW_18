@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+}
+.navbar {
+  font-family: "Exo Light", Arial;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  align-items: center;
+  font-size: 20px;
+  color:#064f5f;
+  cursor: pointer;
+}
+.navlink {
+  grid-area: hover;
+  background-color: white;
+  width: 128px;
+  height: 48px;
+  padding-inline: 20px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+/*active state */
+.navlink:hover {
+  font-family: "Exo Medium", Arial;
+  color:#16AE85;
+}
+.navHome {
+  padding-left: 30px;
+  padding-right: 70px;
+  margin: 10px;
+  margin-bottom: 0px;
+  background: url("images/home_button.png") no-repeat;
+}
+.navHome .homehover {
+  display: none;
+}
+/*active state */
+.navHome:hover .homehover {
+  display: inline-flex;
+  background: url("images/home_button_hover.png") no-repeat;
+}
+/*visited state??? */
+.navlink:visited {
+  display:inline-block;
+  border-bottom: 2px solid #16AE85;
+}
+.WingWork {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.herophoto {
+  width: 100%;
+}
+.Section_Work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+}
+.content h1 {
+  margin: 0px;
+  font-family: 'Exo Light', Arial;
+  font-size: 50px;
+  padding-right: 20px;
+  text-align: center;
+  color: #16AE85;
+}
+.content h2 {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+  font-family: 'Exo Light', Arial;
+  font-size: 24px;
+  text-align: center;
+  color: #064F5F;
+}
+.Section_Workgroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.RockaFairy {
+  margin: 0px auto;
+  cursor: pointer;
+}
+.RockaFairy .RockaFairyHover {
+  display: none;
+}
+/*active state */
+.RockaFairy:hover .RockaFairyHover {
+  /*background: url("images/Img_RockaFairyHover.png") no-repeat;*/
+}
+.ODFW {
+  margin: 0px auto;
+  
+}
+.TicTacGo {
+  margin: 0px auto;
+  cursor: pointer;
+}
+.TicTacGo .TicTacGoHover {
+  display: none;
+}
+/*active state */
+.TicTacGo:hover .TicTacGoHover {
+  /*background: url("images/Img_TicTacGoHover.png") no-repeat;*/
+}
+.SkillsFeather {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.SkillsContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: baseline;
+}
+.SkillsContent h1,h2 {
+  padding-right: 10px;
+  font-family: 'Exo Light', Arial;
+  font-size: 41px;
+  text-align: right;
+  color: #16AE85;
+}
+.SkillsContent li {
+  list-style-type: none;
+  font-family: 'Exo Medium', Arial;
+  font-size: 21px;
+  text-align: left;
+  color: #064F5F;
+}
+.SkillsContent2 {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr .5fr;
+  align-items: baseline;
+}
+.SkillsContent2 h3,h4 {
+  padding-right: 10px;
+  font-family: 'Exo Light', Arial;
+  font-size: 41px;
+  text-align: right;
+  color: #16AE85;
+}
+.SkillsContent2 li {
+  list-style-type: none;
+  font-family: 'Exo Medium', Arial;
+  font-size: 21px;
+  text-align: left;
+  color: #064F5F;
+}
+.Section_Tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Hdr_Tools {
+  padding-bottom: 30px;
+  font-family: 'Exo Light', Arial;
+  font-size: 40px;
+  color: #064F5F;
+}
+/* will add grid template area here later :) */
+.ToolIcons {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+.footer {
+  display:flex;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Exo Medium", Arial;
+  font-size: 10px;
+  padding-bottom: 20px;
+  color: #064f5f;
+}
+
+/* Media Query :) */
+@media only screen and (max-width: 600px) {
+  
+  .navbar {
+    margin: 0px auto;
+    padding-left: 20px;
+    font-size: 15px;
+    align-items: center;
+  }
+  .navlink {
+    padding-inline: 10px;
+  }
+  .navHome {
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: scale(75%);
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content h1 {
+    padding: 0px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .preflight {
+    padding-top: 20px;
+    transform: scale(70%);
+  }
+  .titleline {
+    transform: scale(70%);
+  }
+  .Section_Workgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .SkillsContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .SkillsContent h1,h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .SkillsContent li {
+    font-size: 15px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .SkillsContent2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .SkillsContent2 h3,h4 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .Section_Tools {
+    align-items: center;
+  }  
+  .SkillsContent2 li {
+    font-size: 15px;
+    text-align: center;
+    margin: 0px auto;
+  }  
+  .Hdr_Tools {
+  font-size: 25px;
+  }
+  .ToolIcons {
+    transform: scale(50%);
+}}
